@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-        /* Estilizando cabeçalho */
+      /* estilizando cabeçalho */
 
 .cabecalho-index {
   display: flex;
@@ -31,3 +31,19 @@
   text-decoration: none;
 }
 
+      /* estilizando corpo da página */
+.principal-index {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.principal-index__carro__foto {
+  padding-right: 100px;
+  padding-left: 100px;
+  width: 100%;
+}
+
+.principal-index__descricao {
+  padding: 10px 0px;
+}
