@@ -47,3 +47,34 @@
 .principal-index__descricao {
   padding: 10px 0px;
 }
+
+      /* estilizando o rodapé */
+.rodape-index {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1b357e;
+  padding: 10px;
+}
+
+.rodape-index__redes-sociais {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.rodape-index__texto {
+  color: white;
+}
+.rodape-index__rede {
+  width: 2rem;
+}
+
+.rodape-index__logo {
+  width: 6rem;
+}
+
+.rodape-index__copyright {
+  color: white;
+}
