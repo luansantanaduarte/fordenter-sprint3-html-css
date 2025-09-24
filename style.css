@@ -23,9 +23,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 20px;
 }
 
 .cabecalho-index__logo {
@@ -110,3 +108,65 @@
 }
 
 /* lancamento.html */
+
+.body-lancamento {
+  font-family: "inter", sans-serif;
+}
+
+
+.cabecalho-lancamento {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.cabecalho-lancamento__logo {
+  width: 6rem;
+}
+
+.cabecalho-lancamento__separador {
+  width: 6rem;
+}
+
+.cabecalho-lacamento__nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  font-size: 20px;
+}
+
+.cabecalho-lacamento__nav__pag {
+  text-decoration: none;
+}
+
+.principal-lancamento__video-promocional {
+  width: 100vw;
+}
+
+.principal-lancamento__video {
+  background-color: #1b357e;
+  width: 100%;
+  height: 200px;
+}
+
+.principal-lancamento__comparacao {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+
+.principal-lancamento__comparacao__modelos {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+.principal-lancamento__checkbox {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
