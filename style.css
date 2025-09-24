@@ -3,3 +3,31 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+        /* Estilizando cabeçalho */
+
+.cabecalho-index {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px;
+}
+
+.cabecalho-index__logo {
+  width: 6rem;
+}
+
+.cabecalho-index__separador {
+  width: 6rem;
+}
+
+.cabecalho-index__nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.cabecalho-index__nav__pag {
+  text-decoration: none;
+}
+
