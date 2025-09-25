@@ -148,7 +148,7 @@
   font-weight: 500;
 }
 
-      /* Main */
+/* estilização main - lançamento */
 
 .principal-lancamento {
   flex: 1;
@@ -167,30 +167,51 @@
   height: 100%;
 }
 
+/* estilização da tabela */
+/* alinhando tudo no centro */
 
 .principal-lancamento__comparacao {
-  padding: 25px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 20px;
-}
-
-.principal-lancamento__comparacao__modelos {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  gap: 15px;
-}
-
-.principal-lancamento__checkbox {
   display: flex;
   align-items: center;
-  gap: 15px;
+  justify-content: center;
 }
 
-      /* Footer */
+.principal-lancamento__comparacao__tabela {
+  border-spacing: 25px 0;
+  border-collapse: separate;
+}
 
+/* alinhando elementos */
+.principal-lancamento__comparacao__tabela__linha__dados {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+/* alinhando texto e botao de ajuda */
+.principal-lancamento__comaparacao__tabela__elementos {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* estiliza o input checkbox */
+.principal-lancamento__comparacao__checkbox__botao {
+  width: 30px;
+  height: 30px;
+}
+
+/* estiliza o título dos carros */
+.principal-lancamento__comparacao__titulo {
+  font-size: 20px;
+  width: 300px;
+  font-weight: 400;
+  color: #1b357e;
+  
+}
+
+/* estilização footer - lancamento */
 .rodape-lancamento {
   display: flex;
   align-items: center;
@@ -233,4 +254,3 @@
   flex: 1;
   justify-content: flex-end;
 }
-
