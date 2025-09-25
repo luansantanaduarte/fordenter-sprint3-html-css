@@ -109,7 +109,7 @@
   color: white;
 }
 
-/* lancamento.html */
+      /* lancamento.html */
 
 .body-lancamento {
   font-family: "Inter", sans-serif;
@@ -118,6 +118,8 @@
   justify-content: space-between;
   min-height: 100vh;
 }
+
+    /* Estilizando cabeçalho */
 
 .cabecalho-lancamento {
   display: flex;
@@ -146,9 +148,7 @@
   font-weight: 500;
 }
 
-
-
-/* Main */
+      /* Main */
 
 .principal-lancamento {
   flex: 1;
@@ -169,6 +169,7 @@
 
 
 .principal-lancamento__comparacao {
+  padding: 25px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -188,7 +189,8 @@
   gap: 15px;
 }
 
-/* Footer */
+      /* Footer */
+
 .rodape-lancamento {
   display: flex;
   align-items: center;
