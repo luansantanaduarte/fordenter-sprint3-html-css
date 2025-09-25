@@ -12,7 +12,7 @@
   flex-direction: column;
   gap: auto;
   justify-content: space-between;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   font-family: "inter", sans-serif;
 }
@@ -24,6 +24,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 20px;
+  flex: 1;
 }
 
 .cabecalho-index__logo {
@@ -114,9 +115,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: auto;
-  height: 100vh;
-  width: 100vw;
+  min-height: 100vh;
 }
 
 .cabecalho-lancamento {
@@ -134,29 +133,38 @@
   width: 6rem;
 }
 
-.cabecalho-lacamento__nav {
+.cabecalho-lancamento__nav {
   display: flex;
   justify-content: space-between;
   gap: 25px;
   font-size: 20px;
 }
 
-.cabecalho-lacamento__nav__pag {
+.cabecalho-lancamento__nav__pag {
   text-decoration: none;
 }
 
-.principal-lancamento__video-promocional {
-  width: 100vw;
-}
 
 
 /* Main */
 
-.principal-lancamento__video {
-  background-color: #1b357e;
+.principal-lancamento {
+  flex: 1;
+}
+
+.principal-lancamento__video-promocional {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 500px;
 }
+
+.principal-lancamento__video-promocional iframe {
+  width: 100%;
+  height: 100%;
+}
+
 
 .principal-lancamento__comparacao {
   display: flex;
