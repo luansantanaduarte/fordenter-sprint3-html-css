@@ -201,6 +201,11 @@
 .principal-lancamento__comparacao__checkbox__botao {
   width: 30px;
   height: 30px;
+  cursor: pointer;
+}
+
+.principal-lancamento__comparacao__checkbox__botao:hover {
+  background-color: rgb(71, 64, 64);
 }
 
 /* estiliza o título dos carros */
