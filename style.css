@@ -173,6 +173,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  width: 100%;
 }
 
 .principal-lancamento__comparacao__tabela {
@@ -204,10 +206,21 @@
 /* estiliza o título dos carros */
 .principal-lancamento__comparacao__titulo {
   font-size: 20px;
-  width: 300px;
+  width: auto;
   font-weight: 400;
   color: #1b357e;
+  
+}
 
+.principal-lancamento__botao button {
+  padding: 10px;
+  font-family: "inter", sans-serif;
+  border: none;
+  background-color: #1351D8;
+  color: white;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 /* estilização footer - lancamento */
@@ -215,7 +228,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #1b357e;
+  background-color: #1351D8;
   padding: 10px;
 }
 
