@@ -21,33 +21,36 @@
   </header>
 
   <main class="principal-contato">
-    <div class="principal-contato__foto">
-      <img src="/img/XL Cabine.jpg" alt="">
+    <div class="principal-contato__carro">
+      <img src="/img/XL Cabine.jpg" alt="" class="principal-contato__carro__foto">
     </div>
     <div class="principal-contato__container__formulario">
       <h4 class="principal-contato__container__titulo">Sobre você</h4>
-      <form action="" class="principal-contato__container__formulario__perguntas">
-        <label for="nome"> Nome:
-          <input id="nome" type="text" placeholder="Nome">
+      <form id="formulario_contato" action="" class="principal-contato__container__formulario__perguntas">
+        <label for="nome">
+          <input id="nome" type="text" placeholder="Nome" class="principal-contato__container__formulario__perguntas__pergunta">
         </label>
-        <label for="email"> Email:
-          <input id="email" type="email" placeholder="Email">
+        <label for="email">
+          <input id="email" type="email" placeholder="Email" class="principal-contato__container__formulario__perguntas__pergunta">
         </label>
-        <label for="telefone"> Telefone:
-          <input id="telefone" type="tel" placeholder="Telefone">
+        <label for="telefone">
+          <input id="telefone" type="tel" placeholder="Telefone" class="principal-contato__container__formulario__perguntas__pergunta">
         </label>
-        <label for="tipo_contato"> Tipo de contato:
-          <select name="" id="tipo_contato">
+        <label for="tipo_contato">
+          <select name="Escolha um motivo de contato" id="tipo_contato" class="principal-contato__container__formulario__perguntas__pergunta">
+            <option value="disabled selected">Tipo de mensagem</option>
             <option value="elogio">Elogio</option>
             <option value="reclamacao">Reclamação</option>
             <option value="solicitacao">Solicitação</option>
           </select>
         </label>
-        <label for="descricao">Descreva o seu contato:
-          <textarea name="" id="descricao"></textarea>
+        <label for="descricao">
+          <textarea name="" id="descricao" class="principal-contato__container__formulario__perguntas__pergunta__motivo" placeholder="Digite sua mensagem"></textarea>
         </label>
-        <input type="submit" value="Enviar">
       </form>
+      <div class="principal-contato__container__formulario__perguntas__botao">
+        <input type="submit" value="Enviar" form="formulario_contato">
+      </div>
     </div>
   </main>
   <footer class="rodape-contato">

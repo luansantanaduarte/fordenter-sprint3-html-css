@@ -1,4 +1,3 @@
-
 /* ======================================================= */
 /* import da fonte inter do google fonts */
 /* ======================================================= */
@@ -227,3 +226,56 @@
 /* ======================================================= */
 /* estilizando main da pagina contato */
 /* ======================================================= */
+.principal-contato {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.principal-contato__carro__foto {
+  height: 20rem;
+}
+
+.principal-contato__container__formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.principal-contato__container__formulario__perguntas {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.principal-contato__container__formulario__perguntas__pergunta {
+  padding: 10px;
+  width: 300px;
+  border-radius: 10px;
+}
+
+.principal-contato__container__formulario__perguntas__pergunta__motivo {
+  resize: vertical;
+  max-height: 150px;
+  width: 300px;
+  height: 150px;
+  font-family: inherit;
+  padding: 7px;
+}
+
+.principal-contato__container__formulario__perguntas__botao {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.principal-contato__container__formulario__perguntas__botao input {
+  padding: 10px 70px;
+  background-color: #1351D8;
+  border: none;
+  color: white;
+  font-family: "inter", sans-serif;
+  font-weight: 500;
+  border-radius: 5px;
+}
