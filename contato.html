@@ -1,60 +1,70 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header class="cabecalho-contato">
-        <img src="img/logo-ford-256.png" alt="" class="cabecalho-contato__logo">
-        <nav class="cabecalho-contato__nav">
-          <a href="" class="cabecalho-contato__nav__pag">Home</a>
-          <a href="" class="cabecalho-contato__nav__pag">Lançamento</a>
-          <a href="" class="cabecalho-contato__nav__pag">Contato</a>
-        </nav>
-        <div class="cabecalho-contato__separador"></div>
-      </header>
 
-      <main class="principal-contato">
-        <div class="principal-contato__foto">
-            <img src="/img/XL Cabine.jpg" alt="">
-        </div>
-        <div class="principal-contato__container__formulario">
-            <h4 class="principal-contato__container__titulo">Sobre voce</h4>
-            <form action="" class="principal-contato__container__formulario__perguntas">
-                <label for="nome"> Nome
-                    <input id="nome" type="text" placeholder="Nome">
-                </label>
-                <label for="email"> Email
-                    <input id="email" type="email" placeholder="Email">
-                </label>
-                <label for="telefone"> Telefone
-                    <input id="telefone" type="tel" placeholder="Telefone">
-                </label>
-                <label for="telefone"> Nome
-                    <input id="telefone" type="tel" placeholder="Email">
-                </label>
-            </form>
-        </div>
-      </main>
+<body class="body-contato">
+  <header class="cabecalho-contato">
+    <img src="img/logo-ford-256.png" alt="" class="cabecalho-contato__logo">
+    <nav class="cabecalho-contato__nav">
+      <a href="" class="cabecalho-contato__nav__pag">Home</a>
+      <a href="" class="cabecalho-contato__nav__pag">Lançamento</a>
+      <a href="" class="cabecalho-contato__nav__pag">Contato</a>
+    </nav>
+    <div class="cabecalho-contato__separador"></div>
+  </header>
 
-      <footer class="rodape-contato">
-        <div class="rodape-contato__redes-sociais">
-            <p class="rodape-contato__texto">Redes sociais</p>
-            <div class="rodape-contato__redes">
-              <a href=""><img src="img/facebook-50.png" alt="" class="rodape-contato__rede"></a>
-              <a href=""><img src="img/youtube-squared-50.png" alt="" class="rodape-contato__rede"></a>
-              <a href=""><img src="img/instagram-logo-50.png" alt="" class="rodape-contato__rede"></a>
-            </div>
-        </div>
-        <div class="rodape-contato__copyright">
-          <p class="rodape-contato__copyright__texto">© 2025 Ford - Todos os direitos reservados.</p>
-        </div>
-        <div class="rodape-contato__logo">
-          <img src="img/ford-96.png" alt="" class="rodape-contato__logo__foto">
-        </div>
-      </footer>
+  <main class="principal-contato">
+    <div class="principal-contato__foto">
+      <img src="/img/XL Cabine.jpg" alt="">
+    </div>
+    <div class="principal-contato__container__formulario">
+      <h4 class="principal-contato__container__titulo">Sobre você</h4>
+      <form action="" class="principal-contato__container__formulario__perguntas">
+        <label for="nome"> Nome:
+          <input id="nome" type="text" placeholder="Nome">
+        </label>
+        <label for="email"> Email:
+          <input id="email" type="email" placeholder="Email">
+        </label>
+        <label for="telefone"> Telefone:
+          <input id="telefone" type="tel" placeholder="Telefone">
+        </label>
+        <label for="tipo_contato"> Tipo de contato:
+          <select name="" id="tipo_contato">
+            <option value="elogio">Elogio</option>
+            <option value="reclamacao">Reclamação</option>
+            <option value="solicitacao">Solicitação</option>
+          </select>
+        </label>
+        <label for="descricao">Descreva o seu contato:
+          <textarea name="" id="descricao"></textarea>
+        </label>
+        <input type="submit" value="Enviar">
+      </form>
+    </div>
+  </main>
+  <footer class="rodape-contato">
+    <div class="rodape-contato__redes-sociais">
+      <p class="rodape-contato__texto">Redes sociais</p>
+      <div class="rodape-contato__redes">
+        <a href=""><img src="img/facebook-50.png" alt="" class="rodape-contato__rede"></a>
+        <a href=""><img src="img/youtube-squared-50.png" alt="" class="rodape-contato__rede"></a>
+        <a href=""><img src="img/instagram-logo-50.png" alt="" class="rodape-contato__rede"></a>
+      </div>
+    </div>
+    <div class="rodape-contato__copyright">
+      <p class="rodape-contato__copyright__texto">© 2025 Ford - Todos os direitos reservados.</p>
+    </div>
+    <div class="rodape-contato__logo">
+      <img src="img/ford-96.png" alt="" class="rodape-contato__logo__foto">
+    </div>
+  </footer>
 </body>
 </html>
