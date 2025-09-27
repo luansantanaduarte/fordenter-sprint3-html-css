@@ -1,52 +1,140 @@
+
+/* ======================================================= */
+/* import da fonte inter do google fonts */
+/* ======================================================= */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+/* ======================================================= */
+/* reset-css */
+/* ======================================================= */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+/* ======================================================= */
+/* estilizando body de todas as páginas do projeto */
+/* utilização de várias classes ao mesmo tempo */
+/* ======================================================= */
 
-/* index.html */
-.body-index {
+.body-index,
+.body-lancamento,
+.body-contato {
   display: flex;
   flex-direction: column;
-  gap: auto;
   justify-content: space-between;
   min-height: 100vh;
   font-family: "inter", sans-serif;
 }
 
-/* estilizando cabeçalho */
+/* ======================================================= */
+/* estilizando cabeçalho de todas as páginas do projeto */
+/* utilização de várias classes ao mesmo tempo */
+/* ======================================================= */
 
-.cabecalho-index {
+.cabecalho-index,
+.cabecalho-contato,
+.cabecalho-lancamento {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 20px;
 }
 
-.cabecalho-index__logo {
+.cabecalho-index__logo,
+.cabecalho-contato__logo,
+.cabecalho-lancamento__logo {
   width: 6rem;
 }
 
-.cabecalho-index__separador {
+.cabecalho-index__separador,
+.cabecalho-contato__separador,
+.cabecalho-lancamento__separador {
   width: 6rem;
 }
 
-.cabecalho-index__nav {
+.cabecalho-index__nav,
+.cabecalho-contato__nav,
+.cabecalho-lancamento__nav {
   display: flex;
   justify-content: space-between;
   gap: 25px;
   font-size: 20px;
 }
 
-.cabecalho-index__nav__pag {
+.cabecalho-index__nav__pag,
+.cabecalho-contato__nav__pag,
+.cabecalho-lancamento__nav__pag {
   text-decoration: none;
   font-weight: 500;
 }
 
-/* estilizando corpo da página */
+/* ======================================================= */
+/* estilização dos rodapés de todas as páginas*/
+/* ======================================================= */
+.rodape-index,
+.rodape-lancamento,
+.rodape-contato {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1b357e;
+  padding: 10px;
+}
+
+.rodape-index__redes-sociais,
+.rodape-lancamento__redes-sociais,
+.rodape-contato__redes-sociais {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.rodape-index__rede,
+.rodape-lancamento__rede,
+.rodape-contato__rede {
+  width: 30px;
+}
+
+.rodape-index__rede:hover,
+.rodape-lancamento__rede:hover,
+.rodape-contato__rede:hover {
+  opacity: 0.7;
+}
+
+.rodape-index__texto,
+.rodape-lancamento__texto,
+.rodape-contato__texto {
+  color: white;
+}
+
+.rodape-index__copyright,
+.odape-lancamento__copyright {
+  flex: 1;
+  text-align: center;
+}
+
+.rodape-index__copyright__texto,
+.rodape-lancamento__copyright__texto,
+.rodape-contato__copyright__texto {
+  color: white;
+}
+
+.rodape-index__logo,
+.rodape-lancamento__logo,
+.rodape-contato__logo {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* ======================================================= */
+/* página index.html */
+/* estilização do main da página index */
+/* ======================================================= */
 .principal-index {
   display: flex;
   flex-direction: column;
@@ -64,91 +152,10 @@
   padding: 10px 0px;
 }
 
-/* estilizando o rodapé */
-.rodape-index {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #1b357e;
-  padding: 10px;
-}
-
-.rodape-index__redes-sociais {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 10px;
-  flex: 1;
-}
-
-.rodape-index__rede {
-  width: 30px;
-}
-
-.rodape-index__rede:hover {
-  opacity: 0.7;
-}
-
-.rodape-index__texto {
-  color: white;
-}
-
-.rodape-index__copyright {
-  flex: 1;
-  text-align: center;
-}
-
-.rodape-index__logo {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.rodape-index__copyright__texto {
-  color: white;
-}
-
-/* lancamento.html */
-
-.body-lancamento {
-  font-family: "Inter", sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 100vh;
-}
-
-/* Estilizando cabeçalho */
-
-.cabecalho-lancamento {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-}
-
-.cabecalho-lancamento__logo {
-  width: 6rem;
-}
-
-.cabecalho-lancamento__separador {
-  width: 6rem;
-}
-
-.cabecalho-lancamento__nav {
-  display: flex;
-  justify-content: space-between;
-  gap: 25px;
-  font-size: 20px;
-}
-
-.cabecalho-lancamento__nav__pag {
-  text-decoration: none;
-  font-weight: 500;
-}
-
-/* estilização main - lançamento */
-
+/* ======================================================= */
+/* página lancamento */
+/* estilização do main da página lancamento */
+/* ======================================================= */
 .principal-lancamento {
   flex: 1;
 }
@@ -166,9 +173,6 @@
   height: 100%;
 }
 
-/* estilização da tabela */
-/* alinhando tudo no centro */
-
 .principal-lancamento__comparacao {
   display: flex;
   align-items: center;
@@ -182,7 +186,6 @@
   border-collapse: separate;
 }
 
-/* alinhando elementos */
 .principal-lancamento__comparacao__tabela__linha__dados {
   display: flex;
   align-items: center;
@@ -190,28 +193,24 @@
   gap: 10px;
 }
 
-/* alinhando texto e botao de ajuda */
 .principal-lancamento__comaparacao__tabela__elementos {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-/* estiliza o input checkbox */
 .principal-lancamento__comparacao__checkbox__botao {
   width: 30px;
   height: 30px;
   cursor: pointer;
 }
 
-
-/* estiliza o título dos carros */
 .principal-lancamento__comparacao__titulo {
   font-size: 20px;
   width: auto;
   font-weight: 400;
   color: #1b357e;
-  
+
 }
 
 .principal-lancamento__botao button {
@@ -225,46 +224,6 @@
   margin-bottom: 25px;
 }
 
-/* estilização footer - lancamento */
-.rodape-lancamento {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #1351D8;
-  padding: 10px;
-}
-
-.rodape-lancamento__redes-sociais {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  gap: 10px;
-  flex: 1;
-}
-
-.rodape-lancamento__rede {
-  width: 30px;
-}
-
-.rodape-lancamento__rede:hover {
-  opacity: 0.7;
-}
-
-.rodape-lancamento__texto {
-  color: white;
-}
-
-.rodape-lancamento__copyright {
-  flex: 1;
-  text-align: center;
-}
-
-.rodape-lancamento__copyright__texto {
-  color: white;
-}
-
-.rodape-lancamento__logo {
-  display: flex;
-  flex: 1;
-  justify-content: flex-end;
-}
+/* ======================================================= */
+/* estilizando main da pagina contato */
+/* ======================================================= */
