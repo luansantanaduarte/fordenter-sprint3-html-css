@@ -111,7 +111,7 @@
 }
 
 .rodape-index__copyright,
-.odape-lancamento__copyright {
+.rodape-lancamento__copyright {
   flex: 1;
   text-align: center;
 }
@@ -148,7 +148,8 @@
 }
 
 .principal-index__descricao {
-  padding: 10px 0px;
+  padding: 10px;
+  text-align: center;
 }
 
 /* ======================================================= */
@@ -172,45 +173,6 @@
   height: 100%;
 }
 
-.principal-lancamento__comparacao {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
-}
-
-.principal-lancamento__comparacao__tabela {
-  border-spacing: 25px 0;
-  border-collapse: separate;
-}
-
-.principal-lancamento__comparacao__tabela__linha__dados {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 10px;
-}
-
-.principal-lancamento__comaparacao__tabela__elementos {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.principal-lancamento__comparacao__checkbox__botao {
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-}
-
-.principal-lancamento__comparacao__titulo {
-  font-size: 20px;
-  width: 300px;
-  font-weight: 400;
-  color: #1b357e;
-
-}
 
 .principal-lancamento__botao button {
   padding: 10px;
@@ -290,5 +252,46 @@
 @media (max-width: 850px) {
     .principal-contato {
       flex-direction: column;
+    }
+    .rodape-index,
+    .rodape-lancamento,
+    .rodape-contato {
+      align-items: flex-start;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 15px;
+      background-color: #1b357e;
+      padding: 25px;
+    }
+
+    .rodape-index__redes-sociais,
+    .rodape-lancamento__redes-sociais,
+    .rodape-contato__redes-sociais {
+      justify-content: space-between;
+      width: 100%;
+      
+    }
+
+    .rodape-index__rede,
+    .rodape-lancamento__rede,
+    .rodape-contato__rede {
+      width: 30px;
+    }
+
+    .rodape-index__redes,
+    .rodape-lancamento__redes,
+    .rodape-contato__redes {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    /* principal */
+    .principal-index__carro__foto {
+      padding-right: 20px;
+      padding-left: 20px;
+      width: 100%;
+      height: 40vh;
+      object-fit: scale-down;
     }
 }
