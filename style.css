@@ -230,10 +230,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 25px;
+  margin-top: 25px;
 }
 
+
 .principal-contato__carro__foto {
-  height: 20rem;
+  width: 40%;
 }
 
 .principal-contato__container__formulario {
@@ -278,4 +281,14 @@
   font-family: "inter", sans-serif;
   font-weight: 500;
   border-radius: 5px;
+}
+
+/* ======================================================= */
+/* deixando responsivo - aba contato  */
+/* ======================================================= */
+
+@media (max-width: 850px) {
+    .principal-contato {
+      flex-direction: column;
+    }
 }
