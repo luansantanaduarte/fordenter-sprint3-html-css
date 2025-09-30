@@ -253,6 +253,7 @@
   height: 150px;
   font-family: inherit;
   padding: 7px;
+  border-radius: 10px;
 }
 
 .principal-contato__container__formulario__perguntas__botao {
