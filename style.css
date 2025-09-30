@@ -188,6 +188,11 @@
   gap: 10px;
 }
 
+.principal-lancamento__comparacao__checkbox__botao {
+  width: 30px;
+  height: 30px;
+}
+
 .principal-lancamento__comparacao__titulo {
   width: 17rem;
   font-size: 18px;
@@ -348,5 +353,11 @@
     padding-left: 20px;
     width: 100%;
     object-fit: scale-down;
+  }
+
+  .principal-lancamento__comparacao__container {
+    width: 100%;
+    overflow-x: auto;
+    padding: 10px;
   }
 }
