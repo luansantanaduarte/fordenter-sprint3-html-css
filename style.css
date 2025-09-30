@@ -137,6 +137,7 @@
 .principal-index {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   flex: 1;
 }
@@ -173,6 +174,30 @@
   height: 100%;
 }
 
+.principal-lancamento__comparacao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.principal-lancamento__comaparacao__tabela__elementos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.principal-lancamento__comparacao__titulo {
+  width: 17rem;
+  font-size: 18px;
+  color: #1b357e;
+}
+
+.principal-lancamento__comparacao__tabela {
+  border-collapse: separate;
+  border-spacing: 25px 0;
+}
 
 .principal-lancamento__botao button {
   padding: 10px;
@@ -246,13 +271,34 @@
 }
 
 /* ======================================================= */
-/* deixando responsivo - aba contato  */
+                  /* deixando responsivo */
 /* ======================================================= */
-
 @media (max-width: 850px) {
-    .principal-contato {
+
+               /* cabeçalho de todas as páginas */   
+    .cabecalho-index,
+    .cabecalho-contato,
+    .cabecalho-lancamento {
+      display: flex;
+      align-items: center;
       flex-direction: column;
+      justify-content: space-between;
+      padding: 20px;
     }
+
+    .cabecalho-index__nav,
+    .cabecalho-contato__nav,
+    .cabecalho-lancamento__nav {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 15px;
+      gap: 25px;
+      font-size: 20px;
+    }
+
+              /* rodapé de todas as páginas */ 
     .rodape-index,
     .rodape-lancamento,
     .rodape-contato {
@@ -263,7 +309,7 @@
       background-color: #1b357e;
       padding: 25px;
     }
-
+    
     .rodape-index__redes-sociais,
     .rodape-lancamento__redes-sociais,
     .rodape-contato__redes-sociais {
@@ -271,13 +317,13 @@
       width: 100%;
       
     }
-
+    
     .rodape-index__rede,
     .rodape-lancamento__rede,
     .rodape-contato__rede {
       width: 30px;
     }
-
+    
     .rodape-index__redes,
     .rodape-lancamento__redes,
     .rodape-contato__redes {
@@ -285,8 +331,20 @@
       justify-content: space-between;
       gap: 20px;
     }
+    
+    .rodape-index__logo,
+    .rodape-lancamento__logo,
+    .rodape-contato__logo {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+    
+                          /* principal */
+    .principal-contato {
+      flex-direction: column;
+    }
 
-    /* principal */
     .principal-index__carro__foto {
       padding-right: 20px;
       padding-left: 20px;
@@ -294,4 +352,4 @@
       height: 40vh;
       object-fit: scale-down;
     }
-}
+  }
