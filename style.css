@@ -39,6 +39,8 @@
   align-items: center;
   justify-content: space-between;
   padding: 20px;
+  box-shadow: 0 10px 15px -10px rgba(0, 0, 0, 0.3);
+  margin-bottom: 10px;
 }
 
 .cabecalho-index__logo,
@@ -165,8 +167,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   width: 100%;
   height: 500px;
+}
+
+.principal-lancamento__descricao {
+  text-align: center;
+  padding: 20px;
+  width: 72%;
+}
+
+.principal-lancamento__descricao strong {
+  border: 1.5px solid black;
+  border-radius: 5px;
+  padding: 10px;
 }
 
 .principal-lancamento__video-promocional iframe {
@@ -213,6 +228,13 @@
   border-radius: 5px;
   margin-top: 25px;
   margin-bottom: 25px;
+  cursor: pointer;
+  transition: transform 0.1s linear;
+}
+
+.principal-lancamento__botao button:hover {
+  opacity: 0.7;
+  transform: scale(1.02);
 }
 
 /* ======================================================= */
@@ -277,6 +299,11 @@
   font-family: "inter", sans-serif;
   font-weight: 500;
   border-radius: 5px;
+  cursor: pointer;
+}
+
+.principal-contato__container__formulario__perguntas__botao input:hover {
+  opacity: 0.7;
 }
 
 /* ======================================================= */
@@ -359,9 +386,12 @@
     object-fit: scale-down;
   }
 
+  .principal-lancamento__descricao {
+  width: 90%;
+  }
+
   .principal-lancamento__comparacao__container {
     width: 100%;
     overflow-x: auto;
-    padding: 10px;
   }
 }
