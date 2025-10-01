@@ -178,10 +178,12 @@
   width: 72%;
 }
 
-.principal-lancamento__descricao strong {
-  border: 1.5px solid black;
+.principal-lancamento__descricao__cta {
+  Border: 1.5px solid black;
   border-radius: 5px;
   padding: 10px;
+  margin: 10px;
+  display: inline-block;
 }
 
 .principal-lancamento__video-promocional iframe {
@@ -310,6 +312,7 @@
 /* deixando responsivo */
 /* ======================================================= */
 @media (max-width: 850px) {
+
   /* cabeçalho de todas as páginas */
   .cabecalho-index,
   .cabecalho-contato,
@@ -387,7 +390,7 @@
   }
 
   .principal-lancamento__descricao {
-  width: 90%;
+    width: 90%;
   }
 
   .principal-lancamento__comparacao__container {
