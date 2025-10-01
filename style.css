@@ -68,7 +68,14 @@
 .cabecalho-contato__nav__pag,
 .cabecalho-lancamento__nav__pag {
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 400;
+}
+
+.cabecalho-index__nav__pag:hover,
+.cabecalho-contato__nav__pag:hover,
+.cabecalho-lancamento__nav__pag:hover {
+  text-decoration: underline;
+  opacity: 0.7  ;
 }
 
 /* ======================================================= */
