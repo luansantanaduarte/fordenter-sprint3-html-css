@@ -75,7 +75,7 @@
 .cabecalho-contato__nav__pag:hover,
 .cabecalho-lancamento__nav__pag:hover {
   text-decoration: underline;
-  opacity: 0.7  ;
+  opacity: 0.7;
 }
 
 /* ======================================================= */
@@ -320,7 +320,9 @@
 /* ======================================================= */
 @media (max-width: 850px) {
 
+  /* ............................. */
   /* cabeçalho de todas as páginas */
+  /* ............................. */
   .cabecalho-index,
   .cabecalho-contato,
   .cabecalho-lancamento {
@@ -343,7 +345,9 @@
     font-size: 20px;
   }
 
+  /* .......................... */
   /* rodapé de todas as páginas */
+  /* .......................... */
   .rodape-index,
   .rodape-lancamento,
   .rodape-contato {
@@ -384,11 +388,16 @@
     width: 100%;
   }
 
-  /* principal */
+  /* ................ */
+  /* principal contato*/
+  /* ................ */
   .principal-contato {
     flex-direction: column;
   }
 
+  /* ................ */
+  /* principal index */
+  /* ................ */
   .principal-index__carro__foto {
     padding-right: 20px;
     padding-left: 20px;
@@ -396,6 +405,9 @@
     object-fit: scale-down;
   }
 
+  /* ................ */
+  /* principal lançamento*/
+  /* ................ */
   .principal-lancamento__descricao {
     width: 90%;
   }
