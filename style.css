@@ -199,6 +199,7 @@
 }
 
 .principal-lancamento__comparacao {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -414,7 +415,7 @@
   }
 
   .principal-lancamento__comparacao__container {
-    width: 100%;
     overflow-x: auto;
+    width: 100%;
   }
 }
